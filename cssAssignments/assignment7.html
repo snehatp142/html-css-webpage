@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design & Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('assert/image.jpg') no-repeat center center/cover;
+            color: white;
+            font-family: Arial, sans-serif;
+
+
+            height: 80vh;
+    background-size: cover;
+    background-position: center;
+   
+   
+    background-attachment: fixed;
+    filter: contrast(150%);
+  
+        }
+        header {
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .logo {
+            font-size: 24px;
+            color: orange;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .search-box input, .search-box button {
+            padding: 8px;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90vh;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 36px;
+        }
+        .highlight {
+            color: orange;
+        }
+        .join-btn, .login-btn {
+            background: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .login-box {
+            background: black;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .social-login a {
+            margin: 0 5px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .underline-input {
+            background-color: black;
+  border: none; 
+  border-bottom: 1px solid white; 
+  outline: none; 
+  padding: 5px; 
+  width: 200px;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">PraRoz<span>&#127760;</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Type to Search">
+            <button>Search</button>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="content">
+            <h2 style="color: white;">Web Design & <br><span class="highlight">Development</span><br> Course</h2>
+            <p>Web Design is a specialisation of the design stream. They also use HTML,<br> CSS, WYSIWYG editing software, mark-up validators, etc.,<br> to create design elements.</p>
+            <button class="join-btn">JOIN US</button>
+        </div>
+        <div class="login-box">
+            <h3 style=" color: yellow; ">Login Here</h3>
+            <input type="email" class="underline-input" placeholder="Enter Email Here"><br><br>
+            <input type="password" class="underline-input" placeholder="Enter Password Here"><br>
+            <button class="login-btn">Login</button>
+            <p>Don't have an account? <a href="#">Sign up here</a></p>
+            <div class="social-login">
+                <a href="#">&#x1F426;</a>
+                <a href="#">&#x1F4F1;</a>
+                <a href="#">&#127758;</a>
+                <a href="#">&#x1F4F2;</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

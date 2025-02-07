@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature Cards</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+    /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f8b3d0, #ffd1a4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ff7f50;
+}
+
+
+.card h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="icon">📄</div>
+      <h3>Allowed file type</h3>
+      <p>Specify file formats that are allowed to upload.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🅼</div>
+      <h3>Maximum file size</h3>
+      <p>Set maximum file size that is allowed to upload.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📂</div>
+      <h3>Attachment Visibility</h3>
+      <p>Display attachments to certain customer groups and store views.</p>
+    </div>
+    <div class="card">
+      <div class="icon">⬇️</div>
+      <h3>Download limit</h3>
+      <p>Limit the number of times an attachment can be downloaded.</p>
+    </div>
+    <div class="card">
+      <div class="icon">👁️</div>
+      <h3>Product Preview</h3>
+      <p>Preview products that are assigned to attachment.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔗</div>
+      <h3>API support</h3>
+      <p>Specify file formats that are allowed to upload.</p>
+    </div>
+  </div>
+</body>
+</html>

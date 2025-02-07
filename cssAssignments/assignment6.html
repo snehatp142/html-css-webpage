@@ -1,0 +1,280 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: #0a1670;
+            height: 500px; 
+        }
+        nav{background-color: white;
+        width: 550px;
+        margin-left: 30%;
+    height: 50px;
+   
+    }
+    
+    .flex-container{
+  display: flex;
+  flex-direction: row;
+  background: white;
+  background-color: azure;
+  
+  /* text-align: center; */
+  padding: 20px;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+
+/* 
+.active :hover{ */
+    /* transform: translateY(-10px); */
+    /* color: blueviolet;
+transform: translate(50px, 100px); */
+/* 
+} */
+
+.span-heading{ color: white;
+padding-left: 20%;
+padding-bottom: 50px;}
+.span-heading h1{
+    padding-left: 10%;
+    position: relative;
+}
+.span-card{
+    color: black;
+
+
+
+
+
+}
+img{float:right;
+  height: 200px;  
+  width: auto;
+padding-right: 30%;
+padding-bottom:30% ;
+
+}
+section{
+    padding-left: 60px ;
+    padding-top: 30px;
+}
+
+
+.flex-container>div {
+    
+
+  background-color:white;
+  
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+ height: 200px;
+  width: 450px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 20px;
+ 
+}
+.flex-container:active{
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} 
+li{
+    display: inline;
+
+}
+li a{ color:black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right:25px ;
+    text-decoration: none;}   
+    </style>
+</head>
+<body>
+    <header>
+         <span class="span-heading"> <h1 >SITENAME</h1></span>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="#" class="active">Services</a></li>
+                <li><a href="#" class="active">Solutions</a></li>
+                <li><a href="#" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+        <section>
+        
+            <h4 style="color: lightblue;">Maecenas Tincidu Placerat</h4>
+            <h3 style="color: gold;">Aliquam Anisi Estinvive </h3>
+            <button>LDEXIP</button>
+            
+    
+        </section>
+        <aside>
+          <img  src="assert/image6.png" alt="" srcset="">
+        </aside>
+    </header>
+   
+    <footer>
+        <div class="flex-container">
+            <div >
+                <span class="span-card">shorts about as</span>
+                <p></p>
+                <button>sharae info</button>
+            </div>
+            <div >
+                <span class="span-card">shorts about as</span>
+                <p></p>
+                <button>share info</button>
+            </div>
+            <div >
+                <span class="span-card">shorts about as</span>
+                <p></p>
+                <button>share info</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #0073e6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+        .navbar h1 {
+            color: white;
+            margin: 0;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+        }
+        .nav-links a.active {
+            background-color: #ffd700;
+            color: black;
+            border-radius: 5px;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #2d2a6e;
+            padding: 50px;
+            color: white;
+        }
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero h2 {
+            color: #ffd700;
+        }
+        .hero button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .hero img {
+            width: 300px;
+           
+            width: 200px; 
+            height: 30%;
+            float: left;
+            margin-left: 20px;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        .card {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .card button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Sitename</h1>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="hero">
+            <div class="hero-text">
+                <h4>Maecenas Tincidu Placerat</h4>
+                <h2>Aliquam Anisi Estinvive</h2>
+                <button>LOREMIP</button>
+            </div>
+            <img src="assert/image6.png" alt="Businessman">
+        </div>
+    </header>
+    <section class="cards-container">
+        <div class="card">
+            <h3>Short About Us</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            <button>More Info</button>
+        </div>
+        <div class="card">
+            <h3>Short About Us</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            <button>More Info</button>
+        </div>
+        <div class="card">
+            <h3>Short About Us</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            <button>More Info</button>
+        </div>
+    </section>
+</body>
+</html>
